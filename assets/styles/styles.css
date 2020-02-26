@@ -1,0 +1,64 @@
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 75px;
+    background-color: #0A2D65;
+}
+
+.header-top .header-top_logo img {
+    max-height: 50px;
+}
+
+.header-top_navigation a {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.header-top_navigation a:last-of-type {
+    margin-right: 0;
+}
+
+.header-top .header-top_login a {
+    color: yellow;
+}
+
+.header-content {
+    background-color: #09368B;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header-content_left .header-content_text-top {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header-content_left .header-content_text-bottom {
+    font-size: 25px;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.header-content_left .header-content_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content_left .header-content_buttons .header-content_button {
+    padding: 5px 75px;
+    border-radius: 10px;
+    white-space: normal;
+}
+
+.header-content_left .header-content_buttons .header-content_button.header-button_left {
+    background-color: yellow;
+    color: white;
+}
+
+.header-content_left .header-content_buttons .header-content_button.header-button_right {
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+}
