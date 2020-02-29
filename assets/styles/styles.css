@@ -56,6 +56,12 @@
     padding-bottom: 100px;
 }
 
+.header-content .row {
+    max-width: 1300px;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
 .header-content_left .header-content_text-top {
     font-size: 47px;
     font-family: 'Gotham', sans-serif;
@@ -147,7 +153,7 @@ a:hover, a:active {
 
 .product-solution {
     height: 460px;
-    padding: 50px 265px 0 265px;
+    padding: 65px 0;
     margin-bottom: 500px;
 }
 
@@ -163,33 +169,22 @@ a:hover, a:active {
     color: #092e65;
     font-family: "Canaro-bold";
     font-weight: 700;
-    padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .product-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
 }
 
-.product-cards .card{
+.product-cards .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 261px;
-    width: 222px;
-    padding: 5px;
-    background-color: #FBFBFB;
-    font: Bold 13px/14px Gotham;
-}
-
-.card-one:nth-child(odd) {
     background-color: #f3f3f3;
-}
-
-.card-two:nth-child(even) {
-    background-color: #f3f3f3;
+    font-family: 'Gotham', sans-serif;
+    padding: 30px 15px;
 }
 
 .card img {
@@ -197,17 +192,22 @@ a:hover, a:active {
     height: 55px;
     width: 55px;
     object-fit: contain;
+    margin-bottom: 20px;
 }
 
-.card p:first-of-type {
-    font-size: 14px;
-    margin: 5px 0 10px 0;
-}
-
-.card p:last-of-type {
+.product-cards .card p.card-heading {
     text-align: center;
-    margin: 28px 17px;
+    max-width: 125px;
+    font-weight: 700;
     font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.product-cards .card p.card-content {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
 }
 
 .view-all {
@@ -616,4 +616,10 @@ a:hover, a:active {
     font-family: 'Gotham', sans-serif;
     background-color: #DEEBFF;
     text-align: center;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
 }
