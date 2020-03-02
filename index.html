@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Skillcad</title>
 </head>
-<body>
+<body id="body">
 <div class="header">
     <div class="header-top">
         <a class="logo" href="#"></a>
         <div class="header-top_navigation">
             <a href="#">Products</a>
-            <a href="#">Training Videos</a>
+            <a href="#">Videos</a>
             <a href="#">Data Sheets</a>
             <a href="#">Services</a>
             <a href="#">About Us</a>
@@ -55,10 +55,10 @@
     </div>
 </div>
 
-<div class="products-section">
+<div id="products-section">
     <div class="products-navigation">
         <a href="#" class="products-button-pressed">Products</a>
-        <a href="#">Training Videos</a>
+        <a href="#">Videos</a>
         <a href="#">Data Sheets</a>
         <a href="#">Testimonials</a>
         <a href="#">Blogs and Articles</a>
@@ -153,48 +153,46 @@
 </div>
 
 <div class="layout-section">
-    <div class="layout-one">
-        <div class="layout-detail">
-            <img src="./assets/images/layout-left.png">
-            <span class="blue-line"></span>
-            <h2 class="blue-h2">IC Layout Automation Suite</h2>
-            <p>Is a set of over 120 user guided layout commands that boost a layout designers productivity
-                on average over 30%-50% by automating demanding physical design task.
-            </p>
-            <p>Based on SkillCAD’s
-                proprietary correct by constructions layout optimization technology teams can tape out
-                faster with less errors and higher quality designs for better yields.
-            </p>
-            <p>
-                SkillCAD’s IC LAS
-                integrates seamlessly with Cadence Virtuosso Layout Suite so designers can IC LAS immediately
-                upon installation.
-            </p>
-            <div class="view-commands">
-                <button>
-                    View Commands
-                </button>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="layout-item col-5">
+                <img src="./assets/images/layout-left.png">
+                <div class="layout-heading">IC Layout Automation Suite</div>
+                <p>Is a set of over 120 user guided layout commands that boost a layout designers productivity
+                    on average over 30%-50% by automating demanding physical design task.
+                </p>
+                <p>Based on SkillCAD’s
+                    proprietary correct by constructions layout optimization technology teams can tape out
+                    faster with less errors and higher quality designs for better yields.
+                </p>
+                <p>
+                    SkillCAD’s IC LAS
+                    integrates seamlessly with Cadence Virtuosso Layout Suite so designers can IC LAS immediately
+                    upon installation.
+                </p>
+                <div class="view-commands">
+                    <button>
+                        View Commands
+                    </button>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="layout-two">
-        <div class="layout-detail">
-            <img src="./assets/images/layout-right.png" >
-            <span class="blue-line"></span>
-            <h2 class="blue-h2">Flat Panel Layout Editor</h2>
-            <p>Provides over 30 cutting-edge layout commands specifically
-                developed for Flat Panel Display Layout Design.
-            </p>
-            <p>FPLE uses SkillCAD’s proprietary Layout Optimization Technology to improve layout designers
-                productivity by over 30-50% and reduce errors for faster tapeouts. FPLE is used by over
-                5 of the worlds leading
-                Flat Panel Manufactures.
-            </p>
-            <p>SkillCAD’s IC LAS integrates seamlessly with Cadence Virtuosso Layout Suite.</p>
-            <div class="view-commands">
-                <button>
-                    View Commands
-                </button>
+            <div class="layout-item col-5">
+                <img src="./assets/images/layout-right.png" >
+                <div class="layout-heading">Flat Panel Layout Editor</div>
+                <p>Provides over 30 cutting-edge layout commands specifically
+                    developed for Flat Panel Display Layout Design.
+                </p>
+                <p>FPLE uses SkillCAD’s proprietary Layout Optimization Technology to improve layout designers
+                    productivity by over 30-50% and reduce errors for faster tapeouts. FPLE is used by over
+                    5 of the worlds leading
+                    Flat Panel Manufactures.
+                </p>
+                <p>SkillCAD’s IC LAS integrates seamlessly with Cadence Virtuosso Layout Suite.</p>
+                <div class="view-commands">
+                    <button>
+                        View Commands
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -506,5 +504,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<script src="./assets/js/sticky-products-section.js"></script>
 </body>
 </html>
