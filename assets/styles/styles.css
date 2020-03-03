@@ -9,6 +9,10 @@
     src: url('../fonts/GOTHAMBOOK.TTF') format('TTF');
 }
 
+body{
+    font-family: 'Gotham';
+}
+
 .container {
     padding: 0;
 }
@@ -176,7 +180,7 @@
 }
 
 .product-solution {
-    padding: 65px 15px;
+    padding-top: 50px;
 }
 
 .product-solution .container {
@@ -226,10 +230,6 @@
     display: flex;
 }
 
-.product-solution {
-    padding: 65px 15px;
-}
-
 .product-solution .container .product-cards:nth-of-type(3) {
     margin-top: 15px;
 }
@@ -239,7 +239,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 261px;
+    min-height: 261px;
     width: 222px;
     background-color: #f3f3f3;
     font-family: 'Gotham', sans-serif;
@@ -277,9 +277,10 @@
 }
 
 .view-all {
-    display: inline-block;
-    margin-top: 70px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .view-all button {
@@ -366,8 +367,8 @@
 }
 
 .services {
-    height: 915px;
-    padding: 50px 265px 0 265px;
+    min-height: 915px;
+    padding-top: 50px;
     background-color: #092E65;
 }
 
@@ -390,13 +391,12 @@
 
 .services-cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 110px;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .services-cards .card {
-    height: 435px;
+    min-height: 435px;
     width: 400px;
     background-color: #2A6AFF;
     padding: 50px 35px;
@@ -434,37 +434,38 @@
 }
 
 .testimonials {
-    height: 720px;
-    padding: 50px 265px 0 265px;
+    min-height: 720px;
+    padding-top: 50px;
     background-color: #DEEBFF;
 }
 
 .testimonials-cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 120px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .testimonials-cards .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px;
+    min-height: 180px;
     /*need height = 160px*/
     width: 560px;
     background-color: #fff;
-    box-shadow: 0px 19px 44px #B7D3FF73;
+    box-shadow: 0 19px 44px #B7D3FF73;
     border-radius: 11px;
     opacity: 0.5;
+}
+
+.testimonials-cards .card:first-child {
+    margin-right: 2%;
 }
 
 .testimonials-cards .card-white {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 165px;
-    width: 560px;
     background-color: #fff;
     box-shadow: 0px 19px 44px #B7D3FF73;
     border-radius: 11px;
@@ -482,13 +483,13 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    padding: 30px 55px 0px 55px;
+    padding: 0 55px 0 55px;
 }
 
 .clients {
     height: 410px;
     background-color: #F2F7FF;
-    padding: 115px 300px;
+    padding-top: 50px;
 }
 
 .clients-cards {
@@ -508,17 +509,16 @@
     mix-blend-mode: initial;
 }
 
-.training-videos {
-    height: 815px;
-    padding: 100px 260px;
+.videos {
+    min-height: 815px;
+    padding-top: 50px;
     background-color: #EFC51E;
 }
 
 .videos-cards {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin: 50px 120px;
+    align-items: center;
 }
 
 .video-card {
@@ -527,6 +527,7 @@
     align-items: center;
     flex-direction: column;
     height: 290px;
+    margin-right: 2%;
 }
 
 .video-card img {
@@ -566,8 +567,8 @@
 }
 
 .data-sheets {
-    height: 815px;
-    padding: 50px 265px 0 265px;
+    min-height: 815px;
+    padding-top: 50px;
     background-color: #092E65;
 }
 
@@ -579,7 +580,7 @@
 }
 
 .data-cards .card {
-    height: 360px;
+    min-height: 360px;
     width: 290px;
     background-color: #fff;
     padding: 25px;
@@ -618,18 +619,12 @@
     margin-top: 10px;
 }
 
-
 .card-details button:hover {
     color: #fff;
     background-color: #EFC51E;
 }
 
 .card-details button img{
-    padding-right: 10px;
-}
-
-.card-details img:hover{
-    color: #fff;
     padding-right: 10px;
 }
 
