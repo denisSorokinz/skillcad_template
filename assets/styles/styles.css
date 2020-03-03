@@ -4,6 +4,11 @@
     src: url('../fonts/CANARO-BOLD.TTF') format('TTF');
 }
 
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/GOTHAMBOOK.TTF') format('TTF');
+}
+
 .container {
     padding: 0;
 }
@@ -187,6 +192,16 @@
     margin-bottom: 10px;
 }
 
+.blue-h2 {
+    font-family: 'Canaro-bold', sans-serif;
+    color: #092E65;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700;
+}
+
 .product-heading {
     font-size: 30px;
     color: #092e65;
@@ -292,6 +307,11 @@
     margin-bottom: 22.5px;
 }
 
+.layout-item {
+    height: 730px;
+    top: 75px;
+}
+
 .layout-heading {
     font-family: 'Canaro-bold';
     color: #092e65;
@@ -299,6 +319,7 @@
     line-height: 32px;
     margin-bottom: 35px;
     position: relative;
+    font-weight: 700;
 }
 
 .layout-heading::before {
@@ -319,6 +340,7 @@
     color: #1E1E1E;
     opacity: 0.67;
     padding-bottom: 30px;
+    font-family: 'Gotham', sans-serif;
 }
 
 .view-commands {
@@ -357,11 +379,13 @@
 }
 
 .white-h2 {
-    font-size: 30px;
+    font-family: 'Canaro-bold', sans-serif;
     color: #fff;
-    /*    font-family: "Canaro W00";*/
-    font-weight: bold;
-    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700;
 }
 
 .services-cards {
@@ -426,7 +450,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 180px;
+    /*need height = 160px*/
     width: 560px;
     background-color: #fff;
     box-shadow: 0px 19px 44px #B7D3FF73;
@@ -438,18 +463,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 165px;
     width: 560px;
     background-color: #fff;
     box-shadow: 0px 19px 44px #B7D3FF73;
     border-radius: 11px;
+    opacity: 1;
+}
+
+.testimonials-cards .card span {
+    font-weight: bold;
+    font-family: 'Gotham', sans-serif;
+    line-height: 30px;
 }
 
 .testimonials-cards .card p {
-    font-size: 24px;
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
-    letter-spacing: 0;
-    color: #1E1E1E;
+    padding: 30px 55px 0px 55px;
 }
 
 .clients {
@@ -463,6 +496,16 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
+}
+
+.clients-cards img {
+    opacity: 0.38;
+    mix-blend-mode: luminosity;
+}
+
+.clients-cards img:hover {
+    opacity: 1;
+    mix-blend-mode: initial;
 }
 
 .training-videos {
@@ -547,7 +590,7 @@
     font-size: 21px;
     text-align: center;
     color: #1E1E1E;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 10px 0;
 }
 
@@ -575,24 +618,20 @@
     margin-top: 10px;
 }
 
+
+.card-details button:hover {
+    color: #fff;
+    background-color: #EFC51E;
+}
+
 .card-details button img{
     padding-right: 10px;
 }
 
-.card-pressed {
-    height: 360px;
-    width: 290px;
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 12px;
+.card-details img:hover{
+    color: #fff;
+    padding-right: 10px;
 }
-/*
-.pressed-cardLine {
-    height: 5px;
-    border-radius: 12px 12px 0 0;
-   background-color: #EFC51E;
-}
-*/
 
 .about .container {
     padding: 190px 0;
