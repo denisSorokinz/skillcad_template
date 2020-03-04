@@ -16,15 +16,16 @@
 <div class="header">
     <div class="header-top">
         <a class="logo" href="#"></a>
-        <div class="header-top_navigation">
-            <a href="#products-section">Products</a>
+        <div id="headerTopNavigation" class="header-top_navigation">
+            <a class="active" href="#products-section">Products</a>
             <a href="#videos-section">Videos</a>
             <a href="#data-sheets-section">Data Sheets</a>
             <a href="#services-section">Services</a>
             <a href="#about-section">About Us</a>
         </div>
         <div class="header-top_login">
-            <a href="#">Sign In/Create Account</a>
+            <!--        request link for test-->
+            <a href="request-form.html">Sign In/Create Account</a>
         </div>
     </div>
     <div class="header-content">
@@ -58,8 +59,8 @@
 </div>
 
 <div id="products-section">
-    <div class="products-navigation">
-        <a href="#products-section" class="products-button-pressed">Products</a>
+    <div id="productsNavigation" class="products-navigation">
+        <a class="products-button-pressed" href="#products-section">Products</a>
         <a href="#videos-section">Videos</a>
         <a href="#data-sheets-section">Data Sheets</a>
         <a href="#testimonials-section">Testimonials</a>
@@ -534,6 +535,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./assets/js/sticky-products-section.js"></script>
+<script src="./assets/js/active-menu.js"></script>
 </body>
 </html>

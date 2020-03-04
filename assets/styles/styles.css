@@ -13,6 +13,12 @@ body{
     font-family: 'Gotham';
 }
 
+/**/
+#productsNavigation a.active {
+    border: 3px solid #333;
+    color: red;
+}
+/**/
 .container {
     padding: 0;
 }
@@ -181,6 +187,7 @@ body{
 
 .product-solution {
     padding-top: 50px;
+    padding-left: 15px;
 }
 
 .product-solution .container {
@@ -309,8 +316,8 @@ body{
 }
 
 .layout-item {
-    height: 730px;
-    top: 75px;
+    min-height: 730px;
+    padding-top: 75px;
 }
 
 .layout-heading {
@@ -366,10 +373,27 @@ body{
     background-color: #E5E5E5;
 }
 
+
+/*.layout-section {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin: auto;*/
+/*    padding: 20px 0;*/
+/*    background-color: #f3f3f3;*/
+/*}*/
+
+/*.layout-item {*/
+/*    min-height: 730px;*/
+/*    top: 75px;*/
+/*}*/
+
+
+/*?*/
 .services {
     min-height: 915px;
     padding-top: 50px;
     background-color: #092E65;
+    padding-left: 15px;
 }
 
 .white-line {
@@ -436,6 +460,7 @@ body{
 .testimonials {
     min-height: 720px;
     padding-top: 50px;
+    padding-left: 15px;
     background-color: #DEEBFF;
 }
 
@@ -443,6 +468,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    padding-left: 15px;
 }
 
 .testimonials-cards .card {
@@ -490,6 +516,7 @@ body{
     height: 410px;
     background-color: #F2F7FF;
     padding-top: 50px;
+    padding-left: 15px;
 }
 
 .clients-cards {
@@ -512,6 +539,7 @@ body{
 .videos {
     min-height: 815px;
     padding-top: 50px;
+    padding-left: 15px;
     background-color: #EFC51E;
 }
 
@@ -569,6 +597,7 @@ body{
 .data-sheets {
     min-height: 815px;
     padding-top: 50px;
+    padding-left: 15px;
     background-color: #092E65;
 }
 
@@ -780,6 +809,35 @@ body{
     color: #092E65;
     font-family: 'Gotham', sans-serif;
     background-color: #DEEBFF;
+    text-align: center;
+}
+
+.form {
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-content h1 {
+    font-family: 'Canaro', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0;
+    color: #092E65;
+    text-align: center;
+}
+
+.flex-content p {
+    font-family: 'Gotham', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    color: #646464;
+    padding-top: 2%;
     text-align: center;
 }
 
