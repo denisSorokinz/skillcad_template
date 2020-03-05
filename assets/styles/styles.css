@@ -1,3 +1,4 @@
+
 /* IMPORT FONTS */
 @font-face {
     font-family: 'Canaro-bold';
@@ -13,12 +14,6 @@ body{
     font-family: 'Gotham';
 }
 
-/**/
-#productsNavigation a.active {
-    border: 3px solid #333;
-    color: red;
-}
-/**/
 .container {
     padding: 0;
 }
@@ -50,7 +45,7 @@ body{
 
 .header-top_navigation a {
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 7rem;
     font-family: 'Gotham', sans-serif;
     color: #fff;
     opacity: 0.6;
@@ -239,6 +234,14 @@ body{
 
 .product-solution .container .product-cards:nth-of-type(3) {
     margin-top: 15px;
+}
+
+.product-solution .product-cards:nth-of-type(2) .card:nth-child(even) {
+    background: #FBFBFB;
+}
+
+.product-solution .product-cards:nth-of-type(3) .card:nth-child(odd) {
+    background: #FBFBFB;
 }
 
 .product-cards .card {
@@ -609,10 +612,12 @@ body{
 }
 
 .data-cards .card {
-    min-height: 360px;
-    width: 290px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 440px;
+    width: 400px;
     background-color: #fff;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     border-radius: 12px;
 }
 
@@ -620,7 +625,6 @@ body{
     font-size: 21px;
     text-align: center;
     color: #1E1E1E;
-    /*font-weight: bold;*/
     padding: 10px 0;
 }
 
@@ -629,7 +633,7 @@ body{
     letter-spacing: 0;
     color: #1E1E1E;
     opacity: 0.67;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .card-details button {
@@ -639,22 +643,35 @@ body{
     height: 50px;
     width: 290px;
     text-align: left;
-    font: Bold 16px/19px Gotham;
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 0;
-    color: #EFC51E;
-    background-color: transparent;
-    border: 2px solid #EFC51E;
+    color: #fff;
+    background-color: #092E65;
+    border: 2px solid #092E65;
     border-radius: 12px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .card-details button:hover {
     color: #fff;
     background-color: #EFC51E;
+    border: 2px solid #EFC51E;
 }
 
-.card-details button img{
-    padding-right: 10px;
+.data-span {
+    min-height: 8px;
+    width: 400px;
+    background-color: #DEDEDE;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.span-hovered {
+    min-height: 8px;
+    width: 400px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #EFC51E;
 }
 
 .about .container {
@@ -839,6 +856,22 @@ body{
     color: #646464;
     padding-top: 2%;
     text-align: center;
+}
+
+.blogs {
+    min-height: 1000px;
+    background: url('../images/blogs-background.png');
+    mix-blend-mode: multiply;
+}
+
+.blogs-heading {
+    border: 2px solid red;
+    font-family: 'Canaro-bold', sans-serif;
+    font-size: 30px;
+}
+
+.blogs-heading button a {
+    color: #092E65;
 }
 
 @media(min-width: 1200px) {
