@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <link href="assets/styles/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <title>Skillcad</title>
 </head>
 <body id="body">
@@ -51,7 +56,23 @@
                     </div>
                 </div>
                 <div class="header-content_right col-5">
-                    <img src="./assets/images/header-right.png">
+                    <video
+                            id="demo-video"
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            poster="/assets/images/header-right.png"
+                            data-setup="{}"
+                    >
+                        <source src="https://skillcad.sfo2.cdn.digitaloceanspaces.com/v/example/master.m3u8" type="application/x-mpegURL" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank"
+                            >supports HTML5 video</a
+                            >
+                        </p>
+                    </video>
                 </div>
             </div>
         </div>
@@ -538,5 +559,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./assets/js/sticky-products-section.js"></script>
 <script src="./assets/js/active-menu.js"></script>
+<script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
 </body>
 </html>
