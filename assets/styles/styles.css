@@ -61,13 +61,13 @@ body {
 }
 
 .row {
-    max-width: 1300px;
+    max-width: 81.25rem;
     justify-content: space-between;
 }
 
 .logo {
-    width: 225px;
-    height: 56px;
+    width: 14.0625rem;
+    height: 3.5rem;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 75px;
+    padding: 1.5625rem 4.6875rem;
     background-color: #0A2D65;
 }
 
@@ -87,12 +87,12 @@ body {
 
 .header-top_navigation a {
     display: inline-block;
-    margin-right: 7rem;
+    margin-right: 112px;
     font-family: 'Gotham-book', sans-serif;
     color: #fff;
     opacity: 0.6;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
 .header-top a:hover {
@@ -106,13 +106,13 @@ body {
 .header-top .header-top_login a {
     color: #EFC51E;
     font-family: 'Gotham-medium', sans-serif;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
 }
 
 .header-content {
     background-color: #09368B;
-    padding: 100px 15px;
+    padding: 6.25rem 0.9375rem;
 }
 
 .header-content .row {
@@ -120,18 +120,18 @@ body {
 }
 
 .header-content_left .header-content_text-top {
-    font-size: 47px;
+    font-size: 2.9375rem;
     font-family: 'Gotham-bold', sans-serif;
-    line-height: 63px;
+    line-height: 3.9375rem;
     color: #fff;
 }
 
 .header-content_left .header-content_text-bottom {
     font-family: 'Gotham-book-italic', sans-serif;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     color: #EFC51E;
-    margin-bottom: 55px;
+    margin-bottom: 3.4375rem;
 }
 
 .header-content_left .header-content_text-bottom i {
@@ -145,13 +145,13 @@ body {
 }
 
 .header-content_left .header-content_buttons .header-content_button {
-    padding: 10px 80px;
-    border-radius: 10px;
+    padding: 0.625rem 5rem;
+    border-radius: 0.625rem;
     font-family: 'Gotham-bold', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     background-color: transparent;
-    border: 1px solid #EFC51E;
+    border: 0.0625rem solid #EFC51E;
     color: #EFC51E;
 }
 
@@ -177,7 +177,7 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     background-color: #f3f3f3;
 }
 
@@ -190,11 +190,11 @@ body {
 }
 
 .body-padding {
-    padding-top: 84px;
+    padding-top: 5.25rem;
 }
 
 .products-navigation {
-    width: 960px;
+    width: 60rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -202,8 +202,8 @@ body {
 
 .products-navigation a {
     font-family: 'Gotham-bold', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     display: block;
     color: #646464;
 }
@@ -213,18 +213,18 @@ body {
 }
 
 .products-navigation a.products-button-pressed {
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background-color: #092e65;
     color: #efc51e;
     font-family: 'Gotham', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 10px 50px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding: 0.625rem 3.125rem;
 }
 
 .product-solution {
-    padding-top: 50px;
-    padding-left: 15px;
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
 }
 
 .product-solution .container {
@@ -235,39 +235,39 @@ body {
 
 .blue-line {
     display: flex;
-    border: 1px solid #092e65;
-    width: 100px;
-    margin-bottom: 10px;
+    border: 0.0625rem solid #092e65;
+    width: 6.25rem;
+    margin-bottom: 0.625rem;
 }
 
 .blue-h2 {
     font-family: 'Canaro-bold', sans-serif;
     color: #092E65;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 35px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.1875rem;
     position: relative;
     font-weight: 700;
 }
 
 .product-heading {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #092e65;
     font-family: 'Canaro-bold', sans-serif;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     position: relative;
 }
 
 .product-heading::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -0.625rem;
     left: 0;
-    width: 115px;
-    height: 3px;
+    width: 7.1875rem;
+    height: 0.1875rem;
     background-color: #092e65;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 .product-cards {
@@ -275,7 +275,7 @@ body {
 }
 
 .product-solution .container .product-cards:nth-of-type(3) {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .product-solution .product-cards:nth-of-type(2) .card:nth-child(even) {
@@ -291,12 +291,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 261px;
-    width: 222px;
+    min-height: 16.3125rem;
+    width: 13.875rem;
     background-color: #f3f3f3;
     font-family: 'Gotham', sans-serif;
-    padding: 30px 15px;
-    margin-right: 15px;
+    padding: 1.875rem 0.9375rem;
+    margin-right: 0.9375rem;
 }
 
 .product-cards .card:last-of-type {
@@ -305,25 +305,25 @@ body {
 
 .product-img {
     display: block;
-    height: 55px;
-    width: 55px;
+    height: 3.4375rem;
+    width: 3.4375rem;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .product-cards .card p.card-heading {
-    max-width: 125px;
+    max-width: 7.8125rem;
     font-family: 'Gotham-bold', sans-serif;
-    font-size: 13px;
-    line-height: 17px;
-    margin-bottom: 10px;
+    font-size: 0.8125rem;
+    line-height: 1.0625rem;
+    margin-bottom: 0.625rem;
     text-align: center;
 }
 
 .product-cards .card p.card-content {
     font-family: 'Gotham-book', sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1rem;
     text-align: center;
 }
 
@@ -331,18 +331,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 .view-all button {
-    padding: 10px 100px;
+    padding: 0.625rem 6.25rem;
     background-color: transparent;
     color: #EFC51E;
-    border: 2px solid #EFC51E;
-    border-radius: 10px;
+    border: 0.125rem solid #EFC51E;
+    border-radius: 0.625rem;
     font-family: 'Gotham-bold';
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .view-all button:focus {
@@ -351,25 +351,25 @@ body {
 
 .layout-section {
     background: linear-gradient(to right, #F3F3F3 50%, #E5E5E5 50%, #E5E5E5 100%);
-    margin-bottom: 260px;
-    padding: 0 15px;
+    margin-bottom: 16.25rem;
+    padding: 0 0.9375rem;
 }
 
 .layout-item img {
-    margin-bottom: 22.5px;
+    margin-bottom: 1.4063rem;
 }
 
 .layout-item {
-    min-height: 730px;
-    padding-top: 75px;
+    min-height: 45.625rem;
+    padding-top: 4.6875rem;
 }
 
 .layout-heading {
     font-family: 'Canaro-bold';
     color: #092e65;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 35px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.1875rem;
     position: relative;
     font-weight: 700;
 }
@@ -377,21 +377,21 @@ body {
 .layout-heading::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -0.625rem;
     left: 0;
-    width: 90px;
-    height: 3px;
+    width: 5.625rem;
+    height: 0.1875rem;
     background-color: #092e65;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 .layout-item p {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: left;
     letter-spacing: 0;
     color: #1E1E1E;
     opacity: 0.67;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     font-family: 'Gotham-book', sans-serif;
 }
 
@@ -402,42 +402,42 @@ body {
 }
 
 .view-commands button {
-    height: 70px;
-    width: 370px;
+    height: 4.375rem;
+    width: 23.125rem;
     background-color: transparent;
     color: #092E65;
-    border: 2px solid #092E65;
-    border-radius: 12px;
+    border: 0.125rem solid #092E65;
+    border-radius: 0.75rem;
     font-family: 'Gotham-bold', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .layout-two {
-    height: 730px;
-    width: 960px;
+    height: 45.625rem;
+    width: 60rem;
     background-color: #E5E5E5;
 }
 
 .services {
-    min-height: 915px;
-    padding-top: 50px;
+    min-height: 57.1875rem;
+    padding-top: 3.125rem;
     background-color: #092E65;
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 .white-line {
     display: flex;
-    border: 1px solid #fff;
-    width: 100px;
-    margin-bottom: 10px;
+    border: 0.0625rem solid #fff;
+    width: 6.25rem;
+    margin-bottom: 0.625rem;
 }
 
 .white-h2 {
     font-family: 'Canaro-bold', sans-serif;
     color: #fff;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 35px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.1875rem;
     position: relative;
     font-weight: 700;
 }
@@ -445,71 +445,71 @@ body {
 .services-cards {
     display: flex;
     justify-content: center;
-    margin: 40px 0;
+    margin: 2.5rem 0;
 }
 
 .services-cards .card {
-    min-height: 435px;
-    width: 400px;
+    min-height: 27.1875rem;
+    width: 25rem;
     background-color: #2A6AFF;
-    padding: 50px 35px;
-    margin: 0 10px;
+    padding: 3.125rem 2.1875rem;
+    margin: 0 0.625rem;
 }
 
 .services-cards .card h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
     text-align: left;
     color: #fff;
 }
 
 .services-cards .card p {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: left;
     color: #fff;
     opacity: 0.67;
-    margin: 10px 0 0 0;
+    margin: 0.625rem 0 0 0;
 }
 
 .schedule {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 0;
+    padding: 4.375rem 0;
 }
 
 .schedule button {
-    height: 60px;
-    width: 570px;
+    height: 3.75rem;
+    width: 35.625rem;
     background-color: #EFC51E;
     color: #fff;
-    border-radius: 12px;
-    font: Bold 20px/24px Gotham;
+    border-radius: 0.75rem;
+    font: Bold 1.25rem/1.5rem Gotham;
 }
 
 .testimonials {
-    min-height: 720px;
-    padding-top: 50px;
-    padding-left: 15px;
+    min-height: 45rem;
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
     background-color: #DEEBFF;
 }
 
 .testimonials-cards {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    padding-left: 15px;
+    margin-top: 3.125rem;
+    padding-left: 0.9375rem;
 }
 
 .testimonials-cards .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 180px;
-    /*need height = 160px*/
-    width: 560px;
+    min-height: 11.25rem;
+    /*need height = 10rem*/
+    width: 35rem;
     background-color: #fff;
-    box-shadow: 0 19px 44px #B7D3FF73;
-    border-radius: 11px;
+    box-shadow: 0 1.1875rem 2.75rem #B7D3FF73;
+    border-radius: 0.6875rem;
     opacity: 0.5;
 }
 
@@ -522,37 +522,37 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0px 19px 44px #B7D3FF73;
-    border-radius: 11px;
+    box-shadow: 0rem 1.1875rem 2.75rem #B7D3FF73;
+    border-radius: 0.6875rem;
     opacity: 1;
 }
 
 .testimonials-cards .card span {
     font-weight: bold;
     font-family: 'Gotham', sans-serif;
-    line-height: 30px;
+    line-height: 1.875rem;
 }
 
 .testimonials-cards .card p {
     font-family: 'Gotham', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     text-align: center;
-    padding: 0 55px 0 55px;
+    padding: 0 3.4375rem 0 3.4375rem;
 }
 
 .clients {
-    height: 410px;
+    height: 25.625rem;
     background-color: #F2F7FF;
-    padding-top: 50px;
-    padding-left: 15px;
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
 }
 
 .clients-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
 .clients-cards img {
@@ -566,9 +566,9 @@ body {
 }
 
 .videos {
-    min-height: 815px;
-    padding-top: 50px;
-    padding-left: 15px;
+    min-height: 50.9375rem;
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
     background-color: #EFC51E;
 }
 
@@ -583,17 +583,17 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 290px;
+    height: 18.125rem;
     margin-right: 2%;
 }
 
 .video-card img {
-    max-height: 250px;
+    max-height: 15.625rem;
 }
 
 .video-card p {
     /*font-family: "Gotham";*/
-    font-size: 19px;
+    font-size: 1.1875rem;
     color: #1E1E1E;
 }
 
@@ -601,32 +601,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 300px;
+    padding: 2.5rem 18.75rem;
 }
 
 .training-buttons button {
-    height: 60px;
-    width: 370px;
-    border-radius: 12px;
-    font: Bold 20px/24px Gotham;
+    height: 3.75rem;
+    width: 23.125rem;
+    border-radius: 0.75rem;
+    font: Bold 1.25rem/1.5rem Gotham;
 }
 
 .training-buttons button:first-of-type {
     background-color: transparent;
-    border: 2px solid #092E65;
+    border: 0.125rem solid #092E65;
     color: #092E65;
 }
 
 .training-buttons button:last-of-type {
     background-color: #092E65;
     color: #fff;
-    border: 2px solid #092E65;
+    border: 0.125rem solid #092E65;
 }
 
 .data-sheets {
-    min-height: 815px;
-    padding-top: 50px;
-    padding-left: 15px;
+    min-height: 50.9375rem;
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
     background-color: #092E65;
 }
 
@@ -634,24 +634,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 50px;
+    margin: 2.5rem 3.125rem;
 }
 
 .data-cards .card {
     align-items: center;
     justify-content: space-between;
-    min-height: 440px;
-    width: 400px;
+    min-height: 27.5rem;
+    width: 25rem;
     background-color: #fff;
-    padding: 0 25px 25px 25px;
-    border-radius: 12px;
+    padding: 0 1.5625rem 1.5625rem 1.5625rem;
+    border-radius: 0.75rem;
 }
 
 .data-cards .card h2 {
-    font-size: 21px;
+    font-size: 1.3125rem;
     text-align: center;
     color: #1E1E1E;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .data-cards .card p {
@@ -659,75 +659,75 @@ body {
     letter-spacing: 0;
     color: #1E1E1E;
     opacity: 0.67;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .data-cards button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 290px;
+    height: 3.125rem;
+    width: 18.125rem;
     text-align: left;
     font-family: 'Gotham', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 0;
     color: #fff;
     background-color: #092E65;
-    border: 2px solid #092E65;
-    border-radius: 12px;
-    margin-top: 25px;
+    border: 0.125rem solid #092E65;
+    border-radius: 0.75rem;
+    margin-top: 1.5625rem;
 }
 
 .data-cards button:hover {
     color: #fff;
     background-color: #EFC51E;
-    border: 2px solid #EFC51E;
+    border: 0.125rem solid #EFC51E;
 }
 
 .data-span {
-    min-height: 8px;
-    width: 400px;
+    min-height: 0.5rem;
+    width: 25rem;
     background-color: #DEDEDE;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
 }
 
 .span-hovered {
-    min-height: 8px;
-    width: 400px;
-    border-radius: 12px 12px 0px 0px;
+    min-height: 0.5rem;
+    width: 25rem;
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
     background-color: #EFC51E;
 }
 
 .about .container {
-    padding: 190px 0;
+    padding: 11.875rem 0;
 }
 
 .about .container .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .about .about-left {
-    max-width: 550px;
+    max-width: 34.375rem;
 }
 
 .about .about-left_top {
-    line-height: 50px;
-    margin-bottom: 50px;
-    font-size: 48px;
+    line-height: 3.125rem;
+    margin-bottom: 3.125rem;
+    font-size: 3rem;
     color: #092E65;
     font-family: 'Canaro-bold', sans-serif;
 }
 
 .about .about-left_content {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #646464;
     font-family: 'Gotham', sans-serif;
-    line-height: 36px;
+    line-height: 2.25rem;
 }
 
 .about .about-left_content b {
@@ -743,8 +743,8 @@ body {
 }
 
 .about .about-right .play-button {
-    width: 107px;
-    height: 107px;
+    width: 6.6875rem;
+    height: 6.6875rem;
     background-image: url('../images/play-button.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -763,11 +763,11 @@ body {
 
 .footer {
     background-color: #092E65;
-    padding: 150px 15px 40px 15px;
+    padding: 9.375rem 0.9375rem 2.5rem 0.9375rem;
 }
 
 .footer .footer-top {
-    margin-bottom: 85px;
+    margin-bottom: 5.3125rem;
 }
 
 .footer .footer-content {
@@ -776,10 +776,10 @@ body {
 }
 
 .footer .footer-content_section-heading {
-    line-height: 50px;
-    font-size: 30px;
+    line-height: 3.125rem;
+    font-size: 1.875rem;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .footer .footer-content_section-heading p {
@@ -792,26 +792,26 @@ body {
     position: absolute;
     content: "";
     top: 50%;
-    right: -30px;
+    right: -1.875rem;
     transform: translate(0, -50%);
     width: 0;
     height: 0;
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
-    border-bottom: 7.5px solid #fff;
+    border-left: 0.4688rem solid transparent;
+    border-right: 0.4688rem solid transparent;
+    border-bottom: 0.4688rem solid #fff;
 }
 
 .footer .footer-content_section-item {
     position: relative;
-    padding-left: 25px;
+    padding-left: 1.5625rem;
     opacity: 0.4;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .footer .footer-content_section-item a {
     font-family: 'Gotham', sans-serif;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
     color: #fff;
 }
 
@@ -825,8 +825,8 @@ body {
     left: 0;
     top: 25%;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.4;
@@ -834,23 +834,23 @@ body {
 
 .footer .footer-bottom_heading {
     font-family: 'Gotham', sans-serif;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .footer .footer-bottom_social-twitter a {
     display: block;
-    width: 67px;
-    height: 67px;
+    width: 4.1875rem;
+    height: 4.1875rem;
     background-image: url('../images/twitter.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .copyright {
-    padding: 25px 0;
+    padding: 1.5625rem 0;
     color: #092E65;
     font-family: 'Gotham', sans-serif;
     background-color: #DEEBFF;
@@ -858,48 +858,48 @@ body {
 }
 
 .form {
-    padding: 4.5rem 0 3.5rem;
+    padding: 72px 0 56px;
 }
 
 .form .container {
-    max-width: 65rem;
+    max-width: 1040px;
     display: flex;
     flex-direction: column;
 }
 
 .form .container p.title {
     font-family: 'Canaro-bold', sans-serif;
-    line-height: 3.1rem;
-    font-size: 3rem;
+    line-height: 49.6px;
+    font-size: 48px;
     color: #092E65;
     text-align: left;
 }
 
 .form .container p.heading {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.8rem;
-    line-height: 3.1rem;
+    font-size: 28.8px;
+    line-height: 49.6px;
     font-weight: 700;
     color: #646464;
     text-align: center;
-    margin-top: 1.25rem;
+    margin-top: 20px;
 }
 
 .form .container .form-input:first-of-type {
-    margin-top: 6.4rem;
+    margin-top: 102.4px;
 }
 
 .form .container .form-input {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 24px;
+    line-height: 24px;
     color: #646464;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .form .container .form-input select,
 .form .container .form-input textarea {
-    border: 0.05rem solid #CBCBCB;
+    border: 0.8px solid #CBCBCB;
 }
 
 
@@ -910,37 +910,37 @@ body {
 
 .form .container .form-input select {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.875rem;
-    line-height: 1.5rem;
+    font-size: 30px;
+    line-height: 24px;
     font-weight: 700;
-    padding: 1.2rem 1rem 1.2rem 2.5rem;
+    padding: 19.2px 16px 19.2px 40px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: linear-gradient(60deg, transparent 50%, #1E1E1E 50%),
     linear-gradient(120deg, #1E1E1E 50%, transparent 50%);
-    background-position: calc(100% - 1.25rem),
-    calc(100% - 0.75rem),
-    calc(100% - 0.5rem);
-    background-size: 10px 10px,
-    10px 10px,
+    background-position: calc(100% - 20px),
+    calc(100% - 12px),
+    calc(100% - 8px);
+    background-size: 0.625rem 0.625rem,
+    0.625rem 0.625rem,
     .5em .5em;
     background-repeat: no-repeat;
 }
 
 .form .container .form-input.phone-input input {
-    max-width: 54.3rem;
+    max-width: 868.8px;
     margin-left: auto;
     display: block;
     float: right;
 }
 
 .form .container .form-input.phone-input select {
-    height: 4.8rem;
-    width: 9.3rem;
+    height: 76.8px;
+    width: 148.8px;
 }
 
 .form .container .form-input.licenses-input select {
-    width: 22.5rem;
+    width: 360px;
 }
 
 .form .container .form-input:last-of-type {
@@ -951,19 +951,19 @@ body {
     width: 100%;
     display: block;
     resize: none;
-    padding: 1rem;
+    padding: 16px;
 }
 
 .form .container .form-input_title {
-    margin-bottom: 0.7rem;
+    margin-bottom: 11.2px;
 }
 
 .form .container .form-input input {
     width: 100%;
-    padding: 0 1rem;
-    height: 4.8rem;
-    border-radius: 0.75rem;
-    border: 0.05rem solid #CBCBCB;
+    padding: 0 16px;
+    height: 76.8px;
+    border-radius: 12px;
+    border: 0.8px solid #CBCBCB;
 }
 
 .form .container .form-input input:focus {
@@ -971,15 +971,15 @@ body {
 }
 
 .form button {
-    max-width: 35.4rem;
-    margin: 6.25rem auto 0;
-    padding: 1rem 15.625rem;
+    max-width: 566.4px;
+    margin: 100px auto 0;
+    padding: 16px 250px;
     border: none;
-    border-radius: 0.75rem;
+    border-radius: 12px;
     background-color: #EFC51E;
     font-family: 'Gotham', sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 700;
     color: white;
 }
@@ -989,14 +989,14 @@ body {
 }
 
 .blogs {
-    min-height: 900px;
+    min-height: 56.25rem;
     width: 100%;
     background-image: url(../images/blogs-background.png);
     mix-blend-mode: multiply;
 }
 
 .blogs-content {
-    padding: 45px 15px;
+    padding: 2.8125rem 0.9375rem;
 }
 
 .content-left {
@@ -1014,13 +1014,13 @@ body {
 .left-content-text {
     flex-direction: row;
     display: flex;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     justify-content: space-between;
 }
 
 .left-content-text p {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .left-content-text p:first-of-type {
@@ -1032,33 +1032,33 @@ body {
 }
 
 .left-content-card {
-    min-height: 310px;
+    min-height: 19.375rem;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 .left-content-card .card {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 18rem;
+    height: 288px;
     background: #FFFFFF;
-    box-shadow: 0px 19px 44px #B7D3FF73;
-    border-radius: 11px;
+    box-shadow: 0rem 1.1875rem 2.75rem #B7D3FF73;
+    border-radius: 0.6875rem;
     opacity: 0.5;
-    padding: 1rem 0.5rem;
+    padding: 16px 8px;
 }
 
 .left-content-card .card .under-picture {
     font-family: 'Gotham', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     color: #646464;
     opacity: 1;
 }
 
 .left-content-card .card .main {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.3rem;
+    font-size: 20.8px;
     text-align: center;
     color: #1E1E1E;
     opacity: 1;
@@ -1067,7 +1067,7 @@ body {
 .left-content-card .card .date {
     text-align: center;
     font-family: 'Gotham', sans-serif;
-    font-size: 0.7rem;
+    font-size: 11.2px;
     color: #646464;
     opacity: 1;
 }
@@ -1079,11 +1079,11 @@ body {
 }
 
 .content-right .card {
-    min-height: 595px;
+    min-height: 37.1875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 11px;
+    border-radius: 0.6875rem;
 }
 
 .virtuoso-pic {
@@ -1092,46 +1092,46 @@ body {
 }
 
 .right-content-text {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .content-right .card p:first-of-type {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     color: #1E1E1E;
     opacity: 1;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .content-right .card p:nth-child(3) {
     font-family: 'Gotham', sans-serif;
-    font-size: 1.1rem;
+    font-size: 17.6px;
     color: #1E1E1E;
     opacity: 0.67;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .content-right .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 4.375rem;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0px 19px 44px #B7D3FF73;
+    box-shadow: 0rem 1.1875rem 2.75rem #B7D3FF73;
     opacity: 0.5;
 }
 
 .content-right .card-footer p {
     font-family: 'Gotham', sans-serif;
-    font-size: 0.7rem;
+    font-size: 11.2px;
     color: #646464;
     opacity: 1;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
     .container {
-        max-width: 1400px;
+        max-width: 87.5rem;
     }
 }
 
@@ -1142,14 +1142,14 @@ body {
 .vjs-icon-placeholder {
     position: relative;
     display: block;
-    width: 112px;
-    height: 100px;
+    width: 7rem;
+    height: 6.25rem;
     left: 40%;
     top: 38%;
     background: url("/assets/images/play-button.png") 0 0 no-repeat;
-    text-indent: -9999px;
+    text-indent: -624.9375rem;
     border: none;
     cursor: pointer; }
 
 .vjs-big-play-button:focus {
-    background: url("/assets/images/play-button.png") 0 -100px no-repeat; }*/
+    background: url("/assets/images/play-button.png") 0 -6.25rem no-repeat; }*/
