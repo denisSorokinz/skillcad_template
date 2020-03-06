@@ -1134,3 +1134,22 @@ body {
         max-width: 1400px;
     }
 }
+
+.jp-video-full .jp-video-play {
+    height: 100%; }
+
+/*
+.vjs-icon-placeholder {
+    position: relative;
+    display: block;
+    width: 112px;
+    height: 100px;
+    left: 40%;
+    top: 38%;
+    background: url("/assets/images/play-button.png") 0 0 no-repeat;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer; }
+
+.vjs-big-play-button:focus {
+    background: url("/assets/images/play-button.png") 0 -100px no-repeat; }*/
