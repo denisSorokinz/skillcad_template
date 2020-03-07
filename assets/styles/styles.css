@@ -552,27 +552,94 @@ body {
 }
 
 .clients {
-    height: 25.625rem;
     background-color: #F2F7FF;
-    padding-top: 3.125rem;
-    padding-left: 0.9375rem;
+    padding: 6.25rem 0.9375rem;
+}
+
+.clients .row {
+    margin: auto;
+    width: 100%;
 }
 
 .clients-cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 3.125rem;
+}
+
+.clients-cards .row:first-of-type {
+    margin-bottom: 4.625rem;
 }
 
 .clients-cards img {
     opacity: 0.38;
     mix-blend-mode: luminosity;
+    object-fit: contain;
+    display: block;
+    width: auto !important;
 }
 
 .clients-cards img:hover {
     opacity: 1;
     mix-blend-mode: initial;
+}
+
+.clients-cards .slide-1,
+.clients-cards .slide-2 {
+    outline: none;
+    margin-bottom: 4.6875rem;
+}
+
+.clients-cards .slide-2 .row:last-of-type {
+    padding: 0 18.75rem;
+}
+
+.clients .slick-dots {
+    display: flex;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 2.5rem;
+    line-height: 1.5625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    text-align: center;
+    opacity: .25;
+    color: black;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #092E65;
+}
+
+.clients .slick-dots li:last-of-type {
+    margin-right: 0;
 }
 
 .videos {
