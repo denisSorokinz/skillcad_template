@@ -572,14 +572,15 @@ body {
 .clients-cards img {
     opacity: 0.38;
     mix-blend-mode: luminosity;
+    filter: grayscale(1);
     object-fit: contain;
     display: block;
-    width: auto !important;
 }
 
 .clients-cards img:hover {
     opacity: 1;
     mix-blend-mode: initial;
+    filter: grayscale(0);
 }
 
 .clients-cards .slide-1,
@@ -593,7 +594,7 @@ body {
 }
 
 .clients .slick-dots {
-    display: flex;
+    margin: auto;
 }
 .slick-dots li {
     position: relative;
@@ -722,6 +723,7 @@ body {
     background-color: #fff;
     padding: 0 1.5625rem 1.5625rem 1.5625rem;
     border-radius: 0.75rem;
+    overflow: hidden;
 }
 
 .data-cards .card h2 {
@@ -1109,13 +1111,13 @@ body {
 }
 
 .left-content-card {
-    min-height: 19.375rem;
     width: 100%;
     padding-left: 0.9375rem;
 }
 
 .left-content-card .card {
     display: flex;
+    flex: 0 0 49.5%;
     justify-content: space-around;
     align-items: center;
     height: 18rem;
