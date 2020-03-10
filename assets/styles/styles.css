@@ -1,14 +1,11 @@
 /* IMPORT FONTS */
 @font-face {
-    font-family: 'Canaro-bold';
-    src: url('../fonts/canaroBold/canaroBold.svg') format('SVG');
-    src: url('../fonts/canaroBold/canaroBold.eot') format('eot');
-    src: url('../fonts/canaroBold/canaroBold.woff') format('woff');
-    src: url('../fonts/canaroBold/canaroBold.woff2') format('woff2');
+    font-family: 'CanaroWoo-Bold';
+    src: url('../fonts/canaroBold/Canaro-W00-Bold.ttf') format('ttf');
 }
 
 @font-face {
-    font-family: 'Gotham-bold';
+    font-family: 'Gotham-Bold';
     src: url('../fonts/Gotham/Gotham-Bold/Gotham-Bold.svg') format('SVG');
     src: url('../fonts/Gotham/Gotham-Bold/Gotham-Bold.eot') format('eot');
     src: url('../fonts/Gotham/Gotham-Bold/Gotham-Bold.ttf') format('ttf');
@@ -17,16 +14,16 @@
 }
 
 @font-face {
-    font-family: 'Gotham-book';
+    font-family: 'Gotham-Book';
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.svg') format('SVG');
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.eot') format('eot');
-    src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.ttf') format('ttf');
+    src: url('../fonts/Gotham/Gotham-Book/GOTHAMBOOK.TTF') format('TTF');
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.woff') format('woff');
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Gotham-book-italic';
+    font-family: 'Gotham-Book-Italic';
     src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.svg') format('SVG');
     src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.eot') format('eot');
     src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.ttf') format('ttf');
@@ -35,7 +32,7 @@
 }
 
 @font-face {
-    font-family: 'Gotham-medium';
+    font-family: 'Gotham-Medium';
     src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.svg') format('SVG');
     src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.eot') format('eot');
     src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.ttf') format('ttf');
@@ -43,14 +40,10 @@
     src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.woff2') format('woff2');
 }
 
-/*@font-face {*/
-/*    font-family: 'Gotham-black';*/
-/*    src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.svg') format('SVG');*/
-/*    src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.eot') format('eot');*/
-/*    src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.ttf') format('ttf');*/
-/*    src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.woff') format('woff');*/
-/*    src: url('../fonts/Gotham/Gotham-Medium/Gotham-Medium.woff2') format('woff2');*/
-/*}*/
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham/Gotham-Black/GOTHAM-BLACK.OTF') format('OTF');
+}
 
 body {
     font-family: 'Gotham-book', sans-serif !important;
@@ -88,7 +81,7 @@ body {
 .header-top_navigation a {
     display: inline-block;
     margin-right: 7rem;
-    font-family: 'Gotham-book', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     color: #fff;
     opacity: 0.6;
     font-size: 1.125rem;
@@ -105,7 +98,7 @@ body {
 
 .header-top .header-top_login a {
     color: #EFC51E;
-    font-family: 'Gotham-medium', sans-serif;
+    font-family: 'Gotham-Medium', sans-serif;
     font-size: 0.875rem;
     line-height: 1.1875rem;
 }
@@ -125,7 +118,7 @@ body {
 
 .header-content_left .header-content_text-top {
     font-size: 2.9375rem;
-    font-family: 'Gotham-bold', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
     line-height: 3.9375rem;
     color: #fff;
 }
@@ -139,7 +132,7 @@ body {
 }
 
 .header-content_left .header-content_text-bottom i {
-    font-family: 'Gotham-book-italic', sans-serif;
+    font-family: 'Gotham-Book-Italic', sans-serif;
     font-weight: 700;
 }
 
@@ -151,7 +144,7 @@ body {
 .header-content_left .header-content_buttons .header-content_button {
     padding: 0.625rem 5rem;
     border-radius: 0.625rem;
-    font-family: 'Gotham-bold', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
     line-height: 1.5rem;
     background-color: transparent;
@@ -210,7 +203,7 @@ body {
 }
 
 .products-navigation a {
-    font-family: 'Gotham-bold', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 1.125rem;
     line-height: 1.5rem;
     display: block;
@@ -229,6 +222,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.5rem;
     padding: 0.625rem 3.125rem;
+    font-weight: bold;
 }
 
 .product-solution {
@@ -249,19 +243,34 @@ body {
 }
 
 .blue-h2 {
-    font-family: 'Canaro-bold', sans-serif;
+    font-family: 'CanaroWoo-Bold', sans-serif;
     color: #092E65;
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 2.1875rem;
     position: relative;
-    font-weight: 700;
+}
+
+.white-line {
+    display: flex;
+    border: 1px solid #fff;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.white-h2 {
+    /*font-family: 'CanaroWoo-Bold', sans-serif;*/
+    color: #fff;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
 }
 
 .product-heading {
     font-size: 1.5rem;
     color: #092e65;
-    font-family: 'Canaro-bold', sans-serif;
+    font-family: 'CanaroWoo-Bold', sans-serif;
     line-height: 32px;
     margin-bottom: 3.75rem;
     position: relative;
@@ -321,7 +330,7 @@ body {
 
 .product-cards .card p.card-heading {
     max-width: 7.8125rem;
-    font-family: 'Gotham-bold', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
     font-size: 0.8125rem;
     line-height: 1.0625rem;
     margin-bottom: 0.625rem;
@@ -329,7 +338,7 @@ body {
 }
 
 .product-cards .card p.card-content {
-    font-family: 'Gotham-book', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 0.75rem;
     line-height: 1rem;
     text-align: center;
@@ -345,7 +354,7 @@ body {
     color: #EFC51E;
     border: 0.125rem solid #EFC51E;
     border-radius: 0.625rem;
-    font-family: 'Gotham-bold';
+    font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
     line-height: 1.5rem;
 }
@@ -370,7 +379,7 @@ body {
 }
 
 .layout-heading {
-    font-family: 'Canaro-bold';
+    font-family: 'CanaroWoo-Bold', sans-serif;
     color: #092e65;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -392,11 +401,11 @@ body {
 .layout-item p {
     font-size: 1rem;
     text-align: left;
-    letter-spacing: 0;
     color: #1E1E1E;
     opacity: 0.67;
     padding-bottom: 1.875rem;
-    font-family: 'Gotham-book', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
+    line-height: 1.5rem;
 }
 
 .view-commands {
@@ -412,8 +421,10 @@ body {
     color: #092E65;
     border: 0.125rem solid #092E65;
     border-radius: 0.75rem;
-    font-family: 'Gotham-bold', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
+    position: absolute;
+    top: 37rem;
 }
 
 .layout-two {
@@ -428,9 +439,9 @@ body {
 }
 
 .services-heading {
-    font-family: 'Canaro-bold', sans-serif;
+    font-family: 'CanaroWoo-Bold', sans-serif;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     margin-bottom: 4.0625rem;
     position: relative;
@@ -461,16 +472,17 @@ body {
 }
 
 .services-cards .card p.card-heading {
-    font-family: 'Gotham-book', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Gotham-Black', sans-serif;
+    font-size: 1.3rem;
     line-height: 2rem;
     text-align: left;
     color: #fff;
     margin-bottom: 0.75rem;
+    font-weight: 900;
 }
 
 .services-cards .card p.card-content {
-    font-family: 'Gotham-book', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 1.125rem;
     line-height: 1.5rem;
     color: #fff;
@@ -490,7 +502,7 @@ body {
     background-color: #EFC51E;
     color: #fff;
     border-radius: 0.75rem;
-    font: Bold 1.25rem/1.5rem Gotham;
+    font-family: 'Gotham-Bold', sans-serif;
     border: none;
 }
 
@@ -500,7 +512,7 @@ body {
 
 .testimonials {
     min-height: 45rem;
-    padding-top: 3.125rem;
+    padding-top: 7.1875rem;
     padding-left: 0.9375rem;
     background-color: #DEEBFF;
 }
@@ -517,12 +529,22 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 11.25rem;
-    /*need height = 10rem*/
+    width: 35rem;
+    background-color: #eef5ff;
+    box-shadow: 0 1.1875rem 2.75rem #B7D3FF73;
+    border-radius: 0.6875rem;
+    font-family: "Gotham-Book", sans-serif;
+}
+
+.testimonials-cards .card:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 11.25rem;
     width: 35rem;
     background-color: #fff;
     box-shadow: 0 1.1875rem 2.75rem #B7D3FF73;
     border-radius: 0.6875rem;
-    opacity: 0.5;
 }
 
 .testimonials-cards .card:first-child {
@@ -546,9 +568,10 @@ body {
 }
 
 .testimonials-cards .card p {
-    font-family: 'Gotham', sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.875rem;
+    /*NEED 'Gotham" font here*/
+    font-family: 'Gotham-Book', sans-serif;
+    font-size: 1rem;
+    line-height: 1.677rem;
     text-align: center;
     padding: 0 3.4375rem 0 3.4375rem;
 }
@@ -647,15 +670,15 @@ body {
 
 .videos {
     min-height: 50.9375rem;
-    padding-top: 3.125rem;
-    padding-left: 0.9375rem;
+    padding: 7.1875rem 3.125rem 0 3.125rem;
     background-color: #EFC51E;
 }
 
 .videos-cards {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem 0 6rem;
 }
 
 .video-card {
@@ -667,34 +690,38 @@ body {
 }
 
 .video-card img {
-    max-height: 15.625rem;
+    max-height: 18.5rem;
 }
 
 .video-card p {
-    font-family: "Gotham-book";
+    font-family: "Gotham-Black", sans-serif;
     font-size: 1.0625rem;
     line-height: 1.375rem;
     color: #1E1E1E;
+    font-weight: 900;
+    padding-top: 1rem;
 }
 
 .training-buttons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2.5rem 18.75rem;
+    justify-content: center;
+    padding-top: 9rem;
+    padding-right: 1.8rem;
 }
 
 .training-buttons button {
     height: 3.75rem;
     width: 23.125rem;
     border-radius: 0.75rem;
-    font: Bold 1.25rem/1.5rem Gotham;
+    font-family: "Gotham-Bold", sans-serif;
 }
 
 .training-buttons button:first-of-type {
     background-color: transparent;
     border: 0.125rem solid #092E65;
     color: #092E65;
+    margin: 0 1rem;
 }
 
 .training-buttons button:last-of-type {
@@ -714,7 +741,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 3.125rem;
+    margin: 2.5rem;
 }
 
 .data-cards .card {
@@ -729,18 +756,27 @@ body {
 }
 
 .data-cards .card h2 {
+    font-family: 'Gotham-Black', sans-serif;
     font-size: 1.3125rem;
     text-align: center;
     color: #1E1E1E;
     padding: 0.625rem 0;
+    max-width: 17rem;
+    font-weight: 800;
+    position: absolute;
+    top: 70px;
 }
 
 .data-cards .card p {
     text-align: left;
-    letter-spacing: 0;
     color: #1E1E1E;
     opacity: 0.67;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Gotham-Book', sans-serif;
+    top: 165px;
+    position: absolute;
+    max-width: 20rem;
+    line-height: 24px;
 }
 
 .data-cards button {
@@ -748,11 +784,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 3.125rem;
-    width: 18.125rem;
+    width: 23rem;
     text-align: left;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
-    font-weight: bold;
     letter-spacing: 0;
     color: #fff;
     background-color: #092E65;
@@ -801,7 +836,7 @@ body {
     margin-bottom: 3.125rem;
     font-size: 3rem;
     color: #092E65;
-    font-family: 'Canaro-bold', sans-serif;
+    /*font-family: 'CanaroWoo-Bold', sans-serif;*/
 }
 
 .about .about-left_content {
@@ -864,6 +899,7 @@ body {
 }
 
 .footer .footer-content_section-heading p {
+    /*TODO: CANARO-BOLD ???*/
     font-family: 'Canaro', sans-serif;
     display: inline-block;
     position: relative;
@@ -949,7 +985,7 @@ body {
 }
 
 .form .container p.title {
-    font-family: 'Canaro-bold', sans-serif;
+    font-family: 'CanaroWoo-Bold', sans-serif;
     line-height: 3.1rem;
     font-size: 3rem;
     color: #092E65;
