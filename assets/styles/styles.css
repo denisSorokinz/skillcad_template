@@ -742,6 +742,7 @@ button:focus {
 .videos .training-buttons {
     margin-top: 5.625rem;
     text-align: center;
+    display: flex;
 }
 
 .videos .training-buttons button {
