@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: 'Gotham-Bold-Italic';
+    src: url('../fonts/Gotham/Gotham-Bold-Italic/Gotham-Bold-Italic.otf') format('otf');
+}
+
+@font-face {
     font-family: 'Gotham-Book';
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.svg') format('SVG');
     src: url('../fonts/Gotham/Gotham-Book/Gotham-Book.eot') format('eot');
@@ -118,6 +123,7 @@ button:focus {
 
 .header-content_left {
     flex: 0 0 45%;
+    max-width: 33rem;
 }
 
 .header-content_left .header-content_text-top {
@@ -128,7 +134,7 @@ button:focus {
 }
 
 .header-content_left .header-content_text-bottom {
-    font-family: Gotham, sans-serif;
+    font-family: 'Gotham-Book-Italic', sans-serif;
     font-size: 1.5rem;
     line-height: 1.75rem;
     color: #EFC51E;
@@ -136,24 +142,28 @@ button:focus {
 }
 
 .header-content_left .header-content_text-bottom i {
-    font-family: 'Gotham-Book-Italic', sans-serif;
+    /*TODO: do Gotham-Bold-Italic (import) ???*/
+    font-family: 'Gotham-Bold-Italic', sans-serif;
     font-weight: 700;
 }
 
 .header-content_left .header-content_buttons {
     display: flex;
     justify-content: space-between;
+    max-width: 34rem;
 }
 
 .header-content_left .header-content_buttons .header-content_button {
     padding: 0.625rem 5rem;
     border-radius: 0.625rem;
-    font-family: 'Gotham-Bold', sans-serif;
+    /*TODO: do Gotham-Bold-Italic (import) ???*/
+    /*font-family: 'Gotham', sans-serif;*/
     font-size: 1.25rem;
     line-height: 1.5rem;
     background-color: transparent;
-    border: 0.0625rem solid #EFC51E;
+    border: 0.125rem solid #EFC51E;
     color: #EFC51E;
+    margin-right: 0.7rem;
 }
 
 .header-content_left .header-content_buttons .header-content_button:hover {
@@ -438,7 +448,7 @@ button:focus {
 }
 
 .services {
-    padding: 7.1875rem 0;
+    padding: 7.1875rem 1rem;
     background-color: #092E65;
 }
 
@@ -718,7 +728,6 @@ button:focus {
     align-items: center;
     flex-direction: column;
     margin-right: 0.75rem;
-    flex: 0 0 24%;
 }
 
 .videos .video-card:last-of-type {
@@ -787,6 +796,7 @@ button:focus {
     padding: 0 1.5625rem 1.5625rem 1.5625rem;
     border-radius: 0.75rem;
     overflow: hidden;
+    margin-right: 1rem;
 }
 
 .data-cards .card h2 {
@@ -797,8 +807,6 @@ button:focus {
     padding: 0.625rem 0;
     max-width: 17rem;
     font-weight: 800;
-    position: absolute;
-    top: 70px;
 }
 
 .data-cards .card p {
@@ -807,10 +815,8 @@ button:focus {
     opacity: 0.67;
     font-size: 1rem;
     font-family: 'Gotham-Book', sans-serif;
-    top: 165px;
-    position: absolute;
     max-width: 20rem;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .data-cards button {
@@ -818,7 +824,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     height: 3.125rem;
-    width: 23rem;
+    width: 17rem;
     text-align: left;
     font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
