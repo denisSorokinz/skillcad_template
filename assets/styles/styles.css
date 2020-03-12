@@ -29,11 +29,11 @@
 
 @font-face {
     font-family: 'Gotham-Book-Italic';
-    src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.svg') format('SVG');
-    src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.eot') format('eot');
-    src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.ttf') format('ttf');
-    src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.woff') format('woff');
-    src: url('../fonts/Gotham/Gotham-BookItalic/Gotham-BookItalic.woff2') format('woff2');
+    src: url('../fonts/Gotham/Gotham-Book-Italic/Gotham-BookItalic.svg') format('SVG');
+    src: url('../fonts/Gotham/Gotham-Book-Italic/Gotham-BookItalic.eot') format('eot');
+    src: url('../fonts/Gotham/Gotham-Book-Italic/Gotham-BookItalic.ttf') format('ttf');
+    src: url('../fonts/Gotham/Gotham-Book-Italic/Gotham-BookItalic.woff') format('woff');
+    src: url('../fonts/Gotham/Gotham-Book-Italic/Gotham-BookItalic.woff2') format('woff2');
 }
 
 @font-face {
@@ -123,7 +123,7 @@ button:focus {
 
 .header-content_left {
     flex: 0 0 45%;
-    max-width: 33rem;
+    max-width: 37rem;
 }
 
 .header-content_left .header-content_text-top {
@@ -142,9 +142,10 @@ button:focus {
 }
 
 .header-content_left .header-content_text-bottom i {
-    /*TODO: do Gotham-Bold-Italic (import) ???*/
     font-family: 'Gotham-Bold-Italic', sans-serif;
     font-weight: 700;
+    font-style: italic;
+    font-size: 1.55rem;
 }
 
 .header-content_left .header-content_buttons {
@@ -328,6 +329,15 @@ button:focus {
     font-family: 'Gotham', sans-serif;
     padding: 1.875rem 0.9375rem;
     margin-right: 0.9375rem;
+}
+
+.card-hovered {
+    transform: scaleY(1.2);
+    z-index: 1;
+}
+
+.long-description-none {
+    display: none;
 }
 
 .product-cards .card:last-of-type {
@@ -1329,6 +1339,12 @@ button:focus {
     font-size: 0.7rem;
     color: #646464;
     opacity: 1;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 75rem) {

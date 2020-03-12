@@ -22,6 +22,26 @@
     <title>SkillCad</title>
 </head>
 <body id="body">
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+            <div class="modal-body">
+                <img src="#" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="product-solution-section">
     <div class="header">
         <div class="header-top">
@@ -45,9 +65,10 @@
                             Accelerating Custom IC Layout Design
                         </div>
                         <div class="header-content_text-bottom">
-                            Over <i>80%</i> of the top mixed signal semiconductor companies use <i>SkillCad</i> with <i>Cadence
-                            Virtuoso Layout Suite</i> to dramatically improve layout designers productivity
-                            for shorter tape out times, reduced errors and higher silicon yields.
+                            Over <i>80%</i> of the top mixed signal
+                            semiconductor companies use <i>SkillCad</i>
+                            with <i>Cadence Virtuoso Layout Suite</i> to
+                            dramatically improve user productivity
                         </div>
                         <div class="header-content_buttons">
                             <button class="header-content_button">
@@ -97,102 +118,129 @@
         <div class="container">
             <div class="product-heading">Product and Solution</div>
             <div class="product-cards">
-                <div class="card">
+                <div class="card"
+                     id="product-card-1"
+                     data-image="./assets/images/products/cpu.png"
+                     data-title="Arrays"
+                     data-text="Some description text"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(1)"
+                >
                     <img class="product-img" src="./assets/images/products/cpu.png" alt="">
                     <p class="card-heading">Arrays</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+
+                <div class="card" id="product-card-2"
+                     data-image="./assets/images/products/hdmi.png"
+                     data-title="Busses"
+                     data-text="Some description text-2"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(2)"
+                >
                     <img class="product-img" src="./assets/images/products/hdmi.png" alt="">
                     <p class="card-heading">Busses</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
                         laying
                         out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-3"
+                     onclick="productCardClicked(3)">
                     <img class="product-img" src="./assets/images/products/chip.png" alt="">
                     <p class="card-heading">Calculation and measurements</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-4"
+                     onclick="productCardClicked(4)">
                     <img class="product-img" src="./assets/images/products/ssd.png" alt="">
                     <p class="card-heading">Connecting metal to other devices</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-5"
+                     onclick="productCardClicked(5)">
                     <img src="./assets/images/products/chip.png" alt="">
                     <p class="card-heading">Density Checks</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-6"
+                     onclick="productCardClicked(6)">
                     <img class="product-img" src="./assets/images/products/ssd.png" alt="">
                     <p class="card-heading">Device Placement</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
             </div>
             <div class="product-cards">
-                <div class="card">
+                <div class="card" id="product-card-7"
+                     onclick="productCardClicked(7)">
                     <img class="product-img" src="./assets/images/products/hdmi_2.png" alt="">
                     <p class="card-heading">Dummy Fill</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-8"
+                     onclick="productCardClicked(8)">
                     <img class="product-img" src="./assets/images/products/video-card.png" alt="">
                     <p class="card-heading">Flat Panel Layout Editor</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-9"
+                     onclick="productCardClicked(9)">
                     <img class="product-img" src="./assets/images/products/fan.png" alt="">
                     <p class="card-heading">Labels</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-10"
+                     onclick="productCardClicked(10)">
                     <img class="product-img" src="./assets/images/products/vga.png" alt="">
                     <p class="card-heading">Layer handling and viewing</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-11"
+                     onclick="productCardClicked(11)">
                     <img class="product-img" src="./assets/images/products/fan.png" alt="">
                     <p class="card-heading">Metal path and path segments</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" id="product-card-12"
+                     onclick="productCardClicked(12)">
                     <img src="./assets/images/products/vga.png" alt="">
                     <p class="card-heading">Multi-Color</p>
                     <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
+                        laying out print, graphic or web designs.The passage is attributed to an unknown.
+                        <span class="long-description-none">Hidden text description example</span>
                     </p>
                 </div>
             </div>
@@ -222,7 +270,7 @@
                 </p>
                 <div class="view-commands">
                     <button>
-                        View Commands
+                        View Command Groups
                     </button>
                 </div>
             </div>
@@ -240,7 +288,7 @@
                 <p>SkillCAD’s IC LAS integrates seamlessly with Cadence Virtuosso Layout Suite.</p>
                 <div class="view-commands">
                     <button>
-                        View Commands
+                        View Command Groups
                     </button>
                 </div>
             </div>
@@ -307,9 +355,9 @@
                     </p>
                 </div>
                 <div class="card">
-                    <p>SkillCAD has over <span>120</span>  correct by construction
+                    <p>SkillCAD has over <span>120</span> correct by construction
                         commands that have significantly reduced our
-                        average  time to tape out.
+                        average time to tape out.
                     </p>
                 </div>
             </div>
@@ -374,10 +422,10 @@
     <div class="container">
         <p class="videos-header">Videos</p>
         <div class="videos-cards">
-<!--            <div class="video-card">-->
-<!--                <img src="" alt="IC LAS">-->
-<!--                <p>IC LAS</p>-->
-<!--            </div>-->
+            <!--            <div class="video-card">-->
+            <!--                <img src="" alt="IC LAS">-->
+            <!--                <p>IC LAS</p>-->
+            <!--            </div>-->
             <div class="video-card">
                 <img src="./assets/images/automation.png" alt="IC Layout Automation Suite">
                 <p>IC Layout Automation Suite</p>
@@ -386,10 +434,10 @@
                 <img src="./assets/images/flat-panel.png" alt="FPLE Flat Panel Layout Editor">
                 <p>FPLE Flat Panel Layout Editor</p>
             </div>
-<!--            <div class="video-card">-->
-<!--                <img src="" alt="Reference Manual & Tutorials">-->
-<!--                <p>Reference Manual & Tutorials</p>-->
-<!--            </div>-->
+            <!--            <div class="video-card">-->
+            <!--                <img src="" alt="Reference Manual & Tutorials">-->
+            <!--                <p>Reference Manual & Tutorials</p>-->
+            <!--            </div>-->
         </div>
         <div class="training-buttons">
             <button>Request Evaluation License</button>
@@ -459,7 +507,7 @@
                 <h2>FPLD Reference Guide and Tutorials</h2>
                 <p>Courses include interactive videos, written course materials,
                     knowledge checks, and hands-on labs through the Mentor
-                    Graphics Virtual Lab platform.  This platform utilizes
+                    Graphics Virtual Lab platform. This platform utilizes
                     a test environment where you can
                     work with the tools in a hands-on setting.
                 </p>
@@ -564,7 +612,7 @@
             </div>
             <div class="about-right col-6">
                 <img src="./assets/images/capture.png" alt="about right image">
-                <button class="play-button"  onclick="window.open('../docs/SKILLCAD_TOPICAL_GUIDE.pdf')"></button>
+                <button class="play-button" onclick="window.open('../docs/SKILLCAD_TOPICAL_GUIDE.pdf')"></button>
             </div>
         </div>
     </div>
@@ -677,5 +725,6 @@
 <script src="./assets/js/sticky-products-section.js"></script>
 <script src="./assets/js/span-button-relations.js"></script>
 <script src="./assets/js/horizontal-slider.js"></script>
+<script src="assets/js/card-click-modal.js"></script>
 </body>
 </html>
