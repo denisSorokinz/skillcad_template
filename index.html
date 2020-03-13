@@ -24,22 +24,25 @@
 <body id="body">
 
 <!-- Modal -->
-<div class="modal fade bd-example-modal-sm" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-     aria-hidden="true">
+<div class="modal fade bd-example-modal-sm" id="cardModal" tabindex="-1" role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-<!--            <div class="modal-header">-->
-<!--                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                    <span aria-hidden="true">&times;</span>-->
-<!--                </button>-->
-<!--            </div>-->
+            <div class="close-modal">
+                <i data-dismiss="modal">X</i>
+            </div>
             <div class="modal-body">
-                <img src="#" alt="">
-                <p></p>
             </div>
         </div>
     </div>
+</div>
+
+<!--Contact-fixed-->
+<div class="contact">
+    <p>Contact</p>
+    <img src="./assets/images/call.svg">
+    <span class="contact-line"></span>
 </div>
 
 <div id="product-solution-section">
@@ -74,7 +77,9 @@
                             <button class="header-content_button">
                                 SkillCad</br> Customers
                             </button>
-                            <button class="header-content_button">
+                            <button class="header-content_button"
+                                    onclick="window.open('../docs/SKILLCAD_TOPICAL_GUIDE.pdf')"
+                            >
                                 Company</br> Introduction
                             </button>
                         </div>
@@ -120,129 +125,248 @@
             <div class="product-cards">
                 <div class="card"
                      id="product-card-1"
-                     data-image="./assets/images/products/cpu.png"
-                     data-title="Arrays"
-                     data-text="Some description text"
+                     data-image="./assets/images/products/new/Array_icon.jpg"
+                     data-title="Array Tools"
+                     data-secondli="The modifying region can be defined by a rectangle, polygon, or another shape."
+                     data-thirdli="Modifications can be directed to affect either inside or outside the defined region,
+                            and to include or exclude the line defining the region."
+                     data-fourthli="Instances inside, or outside, the defining region can be changed to a different instance."
                      data-toggle="modal"
                      data-target="#cardModal"
                      onclick="openModalWithCurrentCard(1)"
                 >
-                    <img class="product-img" src="./assets/images/products/cpu.png" alt="">
-                    <p class="card-heading">Arrays</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                    <img class="product-img" src="./assets/images/products/new/Array_icon.jpg">
+                    <p class="card-heading">Array Tools</p>
+                    <p class="card-content">These tools enable a designer to quickly chop and modify existing instance
+                        arrays</p>
                 </div>
-
-                <div class="card" id="product-card-2"
-                     data-image="./assets/images/products/hdmi.png"
-                     data-title="Busses"
-                     data-text="Some description text-2"
+                <div class="card"
+                     id="product-card-2"
+                     data-image="./assets/images/products/new/Buses_icon.jpg"
+                     data-title="Bus Routing Tools"
+                     data-secondli="This group includes tools for: Creating routing busesModifying existing bus
+                      routingAdding routes to existing buses Continuing existing bus routesTapping into existing bus
+                     routesJoining two existing busesConnecting bus routing to pinsCreating shielded bus
+                     routingCreating twisted metal busesand many more."
+                     data-thirdli="Using of most of these tools is as easy as drawing a single modifying line or drawing a single metal route"
                      data-toggle="modal"
                      data-target="#cardModal"
                      onclick="openModalWithCurrentCard(2)"
                 >
-                    <img class="product-img" src="./assets/images/products/hdmi.png" alt="">
-                    <p class="card-heading">Busses</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying
-                        out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                    <img class="product-img" src="./assets/images/products/new/Buses_icon.jpg">
+                    <p class="card-heading">Bus Routing Tools</p>
+                    <p class="card-content">The bus routing tools are one of the largest groups in SkillCad,
+                        since bus creation and modification is one of the most time- consuming tasks in custom layout
+                        design.</p>
                 </div>
-                <div class="card" id="product-card-3"
-                     onclick="productCardClicked(3)">
-                    <img class="product-img" src="./assets/images/products/chip.png" alt="">
-                    <p class="card-heading">Calculation and measurements</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-3"
+                     data-image="./assets/images/products/new/Calc_and_measure_2_icon.jpg"
+                     data-title="Calculation and Measurement Tools"
+                     data-secondli="More advanced capabilities, enable a user to quickly calculate the resistance
+                      of one, or multiple, metal routing lines."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(3)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Calc_and_measure_2_icon.jpg">
+                    <p class="card-heading">Calculation and Measurement Tools</p>
+                    <p class="card-content">This is a group of tools that facilitate and simplify
+                        common measuring tasks, such as distance, area, and perimeter measurements</p>
                 </div>
-                <div class="card" id="product-card-4"
-                     onclick="productCardClicked(4)">
-                    <img class="product-img" src="./assets/images/products/ssd.png" alt="">
-                    <p class="card-heading">Connecting metal to other devices</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-4"
+                     data-image="./assets/images/products/new/Connect_metal_to_devices_icon.jpg"
+                     data-title="Connecting Metal To Devices Tools"
+                     data-secondli="Tools are included to connect:Sources and/or drains to backbone
+                      metalCovering device sources and/or drains with metal and viasConnecting poly
+                       and metal multiple device gates"
+                     data-thirdli="These connections are made by simply setting the parameters, and drawing
+                     a selection line."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(4)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Connect_metal_to_devices_icon.jpg">
+                    <p class="card-heading">Connecting Metal To Devices Tools</p>
+                    <p class="card-content">This is a set of tools for easily connecting metal to multi-contact
+                        MOS devices</p>
                 </div>
-                <div class="card" id="product-card-5"
-                     onclick="productCardClicked(5)">
-                    <img src="./assets/images/products/chip.png" alt="">
-                    <p class="card-heading">Density Checks</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-5"
+                     data-image="./assets/images/products/new/Density_checking_icon.jpg"
+                     data-title="Density Check Tools"
+                     data-secondli="The regions can be defined by: Polygons, Rectangles, Coordinates, Selected regions."
+                     data-thirdli="A density report is generated in a separate window.  Clicking on one of the density
+                      values in the report will display the area in the layout window."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(5)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Density_checking_icon.jpg">
+                    <p class="card-heading">Density Check Tools</p>
+                    <p class="card-content">The density checking tools facilitate the measurement of
+                        specified layer densities in a defined region</p>
                 </div>
-                <div class="card" id="product-card-6"
-                     onclick="productCardClicked(6)">
-                    <img class="product-img" src="./assets/images/products/ssd.png" alt="">
-                    <p class="card-heading">Device Placement</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-6"
+                     data-image="./assets/images/products/new/Device_placement_icon.jpg"
+                     data-title="Device Placement Tools"
+                     data-secondli="The selected matched device members are quickly placed and
+                      arranged in a graphic window and spacing values between the devices are specified.
+                      Device guardrings can also be requested and specified"
+                     data-thirdli="Once the designer is satisfied with the placements and spacings,
+                      the array and guardrings will be built and placed in the actual layout."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(6)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Device_placement_icon.jpg">
+                    <p class="card-heading">Device Placement Tools</p>
+                    <p class="card-content">These tools simplify the tedious tasks of placing
+                        and modifying the placements of matched devices arrays</p>
                 </div>
             </div>
             <div class="product-cards">
-                <div class="card" id="product-card-7"
-                     onclick="productCardClicked(7)">
-                    <img class="product-img" src="./assets/images/products/hdmi_2.png" alt="">
-                    <p class="card-heading">Dummy Fill</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-7"
+                     data-image="./assets/images/products/new/Dummy_fill_icon.jpg"
+                     data-title="Dummy Fill Tools"
+                     data-secondli="The fill shapes can be created in: A defined area, A selected region, Under a specified layer"
+                     data-thirdli="Once the designer is satisfied with the placements and spacings,
+                      the array and guardrings will be built and placed in the actual layout."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(7)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Dummy_fill_icon.jpg">
+                    <p class="card-heading">Dummy Fill Tools</p>
+                    <p class="card-content">This is a set of tools to simplify the creation of dummy fill in a layout design.</p>
                 </div>
-                <div class="card" id="product-card-8"
-                     onclick="productCardClicked(8)">
-                    <img class="product-img" src="./assets/images/products/video-card.png" alt="">
-                    <p class="card-heading">Flat Panel Layout Editor</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-8"
+                     data-title="Label Tools"
+                     data-secondli="Some of the functions are to: Create a mask label in PG-able text,
+                      Create voltage labels on routing, Creating instance labels on devices,
+                      Re-creating labels on pins"
+                     data-thirdli="The label tools overlap somewhat with the pin tools, since labels on
+                     metal routing are often linked to the connectivity and pins on the metals."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(8)"
+                >
+<!--                    <img class="product-img" src="./assets/images/products/new/Label.jpg">-->
+                    <p class="card-heading">Label Tools</p>
+                    <p class="card-content">The label tools contain applications to create and re-create labels on
+                        various layout objects.</p>
                 </div>
-                <div class="card" id="product-card-9"
-                     onclick="productCardClicked(9)">
-                    <img class="product-img" src="./assets/images/products/fan.png" alt="">
-                    <p class="card-heading">Labels</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-9"
+                     data-image="./assets/images/products/new/Layer_handling_icon.JPG"
+                     data-title="Layer Handling Tools"
+                     data-secondli="Some of the functions include:Creating and editing layer lists, Getting
+                     and viewing layers under a point defined by the cursor, Getting and/or viewing layers under
+                     a cell view, Getting and/or
+                     viewing layers under selected objects, Getting and/or viewing layers within a defined rectangular
+                     region"
+                     data-thirdli="Due to layer handling limitations in earlier versions of Cadence,
+                      these tools were more useful.  Now, many of these capabilities are available in the Cadence tools."
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(9)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Layer_handling_icon.JPG">
+                    <p class="card-heading">Layer Handling Tools</p>
+                    <p class="card-content">This group of tools is useful for viewing and identifying layers in a layout view.</p>
                 </div>
-                <div class="card" id="product-card-10"
-                     onclick="productCardClicked(10)">
-                    <img class="product-img" src="./assets/images/products/vga.png" alt="">
-                    <p class="card-heading">Layer handling and viewing</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-10"
+                     data-image="./assets/images/products/new/Metal_path_icon.jpg"
+                     data-title="Metal Path and Path Segment Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(10)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Metal_path_icon.jpg">
+                    <p class="card-heading">Metal Path and Path Segment Tools</p>
+                    <p class="card-content">Paths and path segment text goes here</p>
                 </div>
-                <div class="card" id="product-card-11"
-                     onclick="productCardClicked(11)">
-                    <img class="product-img" src="./assets/images/products/fan.png" alt="">
-                    <p class="card-heading">Metal path and path segments</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-11"
+                     data-image="./assets/images/products/new/MultiColor_icon.JPG"
+                     data-title="Metal Coloring Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(11)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/MultiColor_icon.JPG">
+                    <p class="card-heading">Metal Coloring Tools</p>
+                    <p class="card-content">The metal coloring tools text goes here.</p>
                 </div>
-                <div class="card" id="product-card-12"
-                     onclick="productCardClicked(12)">
-                    <img src="./assets/images/products/vga.png" alt="">
-                    <p class="card-heading">Multi-Color</p>
-                    <p class="card-content">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic or web designs.The passage is attributed to an unknown.
-                        <span class="long-description-none">Hidden text description example</span>
-                    </p>
+                <div class="card"
+                     id="product-card-12"
+                     data-image="./assets/images/products/new/MultPart_path_icon.jpg"
+                     data-title="Multi-part Path and Guardring Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(12)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/MultPart_path_icon.jpg">
+                    <p class="card-heading">Multi-part Path and Guardring Tools</p>
+                    <p class="card-content">The Multi-part path text goes here.</p>
                 </div>
+            </div>
+
+            <div class="product-cards">
+                <div class="card"
+                     id="product-card-13"
+                     data-image="./assets/images/products/new/Track_routing_icon.JPG"
+                     data-title="Nanowire Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(13)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Track_routing_icon.JPG">
+                    <p class="card-heading">Nanowire Tools</p>
+                    <p class="card-content">Nanowire text goes here.</p>
+                </div>
+                <div class="card"
+                     id="product-card-14"
+                     data-image="./assets/images/products/new/Nets_icon.JPG"
+                     data-title="Net Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(14)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Nets_icon.JPG">
+                    <p class="card-heading">Net  Tools</p>
+                    <p class="card-content">The net tools text goes here.</p>
+                </div>
+                <div class="card"
+                     id="product-card-15"
+                     data-image="./assets/images/products/new/Pins_icon.JPG"
+                     data-title="Pin Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(15)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Pins_icon.JPG">
+                    <p class="card-heading">Pin Tools</p>
+                    <p class="card-content">The pin tools text goes here.</p>
+                </div>
+                <div class="card"
+                     id="product-card-16"
+                     data-image="./assets/images/products/new/Shapes_icon.jpg"
+                     data-title="Shape Handling Tools"
+                     data-toggle="modal"
+                     data-target="#cardModal"
+                     onclick="openModalWithCurrentCard(16)"
+                >
+                    <img class="product-img" src="./assets/images/products/new/Shapes_icon.jpg">
+                    <p class="card-heading">Shape Handling Tools</p>
+                    <p class="card-content">The shape handling text goes here.</p>
+                </div>
+
             </div>
             <button class="view-all">
                 View All
@@ -270,7 +394,7 @@
                 </p>
                 <div class="view-commands">
                     <button>
-                        View Command Groups
+                        View Command
                     </button>
                 </div>
             </div>
@@ -610,9 +734,6 @@
                 <div class="footer-content_section-items">
                     <div class="footer-content_section-item">
                         <a href="request-form.html">List Form</a>
-                    </div>
-                    <div class="footer-content_section-item">
-                        <a href="#">Need Placeholder</a>
                     </div>
                     <div class="footer-content_section-item">
                         <a href="#">Whats New</a>
