@@ -744,6 +744,15 @@ button:focus {
     margin-right: 0;
 }
 
+.video-card_background {
+    position: relative;
+}
+
+.video-card_background button {
+    width: 5rem;
+    height: 5rem;
+}
+
 .videos .video-card img {
     width: 100%;
     height: auto;
@@ -758,13 +767,13 @@ button:focus {
     margin-top: 1rem;
 }
 
-.videos .training-buttons {
+.videos .training-button {
     margin-top: 5.625rem;
     text-align: center;
     display: flex;
 }
 
-.videos .training-buttons button {
+.videos .training-button button {
     height: 3.75rem;
     width: 23.125rem;
     border-radius: 0.75rem;
@@ -774,49 +783,65 @@ button:focus {
     background-color: transparent;
 }
 
-.videos .training-buttons button:first-of-type {
-    margin-right: 1rem;
-}
-
-.videos .training-buttons button:hover {
+.videos .training-button button:hover {
     background-color: #092E65;
     color: #fff;
 }
 
 .data-sheets {
-    min-height: 50.9375rem;
-    padding-top: 3.125rem;
-    padding-left: 0.9375rem;
+    padding: 6.875rem 0 3rem;
     background-color: #092E65;
+}
+
+.data-sheets-heading {
+    position: relative;
+    font-family: 'CanaroWoo-Bold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.data-sheets-heading::before {
+    content: "";
+    position: absolute;
+    top: -0.625rem;
+    left: 0;
+    width: 7.1875rem;
+    height: 0.1875rem;
+    background-color: #fff;
+    border-radius: 0.9375rem;
 }
 
 .data-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem;
+    margin: 2.5rem auto 0;
 }
 
 .data-cards .card {
-    align-items: center;
-    justify-content: space-between;
-    min-height: 27.5rem;
-    width: 25rem;
+    text-align: center;
     background-color: #fff;
-    padding: 0 1.5625rem 1.5625rem 1.5625rem;
     border-radius: 0.75rem;
     overflow: hidden;
     margin-right: 1rem;
+    position: relative;
+    padding: 1rem 0.5rem;
+}
+
+.data-cards .card span {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .data-cards .card h2 {
     font-family: 'Gotham-Black', sans-serif;
-    font-size: 1.3125rem;
+    font-size: 1.1875rem;
     text-align: center;
     color: #1E1E1E;
-    padding: 0.625rem 0;
     max-width: 17rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .data-cards .card p {
@@ -830,26 +855,19 @@ button:focus {
 }
 
 .data-cards button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3.125rem;
-    width: 17rem;
-    text-align: left;
     font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.25rem;
-    letter-spacing: 0;
     color: #fff;
     background-color: #092E65;
-    border: 0.125rem solid #092E65;
-    border-radius: 0.75rem;
-    margin-top: 1.5625rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
 }
 
 .data-cards button:hover {
     color: #fff;
     background-color: #EFC51E;
-    border: 0.125rem solid #EFC51E;
 }
 
 .data-span {
@@ -908,7 +926,7 @@ button:focus {
     width: 100%;
 }
 
-.about .about-right .play-button {
+.play-button {
     width: 6.6875rem;
     height: 6.6875rem;
     background-image: url('../images/play-button.png');
