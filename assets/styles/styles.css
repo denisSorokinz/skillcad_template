@@ -61,6 +61,7 @@ body {
 .row {
     max-width: 81.25rem;
     justify-content: space-between;
+    padding: 0;
 }
 
 button:focus {
@@ -1180,7 +1181,7 @@ button:focus {
 }
 
 .blogs-content {
-    padding: 2.8125rem 0.9375rem;
+    padding: 2.8125rem 0;
 }
 
 .content-left {
