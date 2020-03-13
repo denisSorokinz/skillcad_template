@@ -824,7 +824,6 @@ button:focus {
     background-color: #fff;
     border-radius: 0.75rem;
     overflow: hidden;
-    margin-right: 1rem;
     position: relative;
     padding: 1rem 0.5rem;
 }
